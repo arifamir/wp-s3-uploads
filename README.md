@@ -146,10 +146,7 @@ For more information on S3 permissions please see the Amazon S3 permissions docu
 Custom Media Uploads Path
 =======
 
-The object permission of files uploaded to S3 by this plugin can be controlled by setting the `S3_UPLOADS_OBJECT_ACL`
-constant. The default setting if not specified is `public-read` to allow objects to be read by anyone. If you don't
-want the uploads to be publicly readable then you can define `S3_UPLOADS_OBJECT_ACL` as one of `private` or `authenticated-read` 
-in you wp-config file:
+Custom media uploads configuration helps us to change the default path for the wp-content/uploads directory. You should define S3_UPLOADS_PATH in your wp-config.php: 
 
 ```PHP
 // Set the S3 object permission to private

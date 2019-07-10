@@ -149,7 +149,7 @@ Custom Media Uploads Path
 Custom media uploads configuration helps us to change the default path for the wp-content/uploads directory. You should define S3_UPLOADS_PATH in your wp-config.php: 
 
 ```PHP
-// Set the S3 object permission to private
+// Set the custom media upload path instead of uploads
 define('S3_UPLOADS_PATH', '/media/');
 ```
 
